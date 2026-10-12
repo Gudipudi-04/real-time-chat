@@ -2,8 +2,7 @@
 import { useEffect, useState } from "react";
 import { io } from "socket.io-client";
 import "./App.css";
-
-const socket = io("http://localhost:5000", { autoConnect: false });
+const socket = io("https://real-time-chat-server-okkd.onrender.com", { autoConnect: false });
 
 export default function App() {
   const [username, setUsername] = useState("");
